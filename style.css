@@ -1,0 +1,112 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.banner{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.749),rgba(0, 0, 0, 0.749)),url('background image.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 26px 0px;
+    width: 96%;
+}
+.container h1{
+    /* display: block; */
+    color: rgb(241, 103, 103);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* padding: 9px 15px;
+    font-size: 19px; */
+}
+.container h1:hover{
+       color: rgb(238, 11, 11);
+       /* background-color: bisque;
+       border: 2px solid black;
+       border-radius: 20px; */
+       cursor: pointer;
+}
+.container ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+.container li a{
+    text-decoration: none;
+    color: rgb(241, 103, 103);
+    padding: 2px 20px;
+    margin: 2px 7px;
+    font-size: 13px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     text-transform: uppercase; 
+}
+.container li a:hover{
+    color: black;
+    background-color: bisque;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.container ul li ::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: .5s;
+}
+.container ul li:hover ::after{
+    width: 100%;
+    cursor: pointer;
+}
+#home .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 37%;
+    top: 30vh;
+    margin: 12px 318px;
+    padding: 2px 69px;
+}
+
+#home h3{
+    font-size: 15px;
+    padding: 20px 27px;
+    text-align: center;
+    color: white;
+}
+#home h1{
+    font-size: 65px;
+    color: rgb(241, 97, 97);
+    text-align: center;
+}
+#home h1:hover{
+    cursor: pointer;
+    color: red;
+}
+#home h3:hover{
+    color: rgb(243, 113, 53);
+    cursor: pointer;
+}
+#home button{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(128, 45, 0);
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 9px 20px;
+}
+#home button:hover{
+    color: black;
+    background-color: rgb(104, 230, 85);
+}
